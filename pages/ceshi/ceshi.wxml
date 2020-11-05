@@ -1,0 +1,6 @@
+<!--pages/ceshi/ceshi.wxml-->
+<van-tabs swipeable active="推荐">
+  <van-tab wx:for="{{lists}}" wx:key="*this" title="{{item.text}}">
+    {{item.array.type}}
+  </van-tab>
+</van-tabs>

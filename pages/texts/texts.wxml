@@ -1,0 +1,33 @@
+<!--文章的渲染界面-->
+<view wx:for="{{array}}" wx:key="*this">
+  <!-- 标题 -->
+  <view class="title">{{item.title}}</view>
+  <!-- 作者 -->
+  <view class="author">作者：{{item.type}}</view>
+
+  <!-- 文章 -->
+  
+    <view class="text">{{item.text}}</view>
+    <view class="author">浏览量：{{item.liulan}}</view>
+  
+<!-- 下面的评论点赞界面 -->
+<view class="bottom">
+<!-- 留言功能 -->
+  <van-cell-group>
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    label="评论"
+    placeholder="评论功能还未开放"
+    disabled
+    border="{{ false }}"
+    use-button-slot
+  >
+  <van-button slot="button" size="small" type="primary">点击评论</van-button>
+  </van-field>
+  </van-cell-group>
+</view>
+</view>
+
+

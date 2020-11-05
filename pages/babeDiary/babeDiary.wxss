@@ -1,0 +1,22 @@
+/* pages/babeDiary/babeDiary.wxss */
+.imgTop{
+  width: 100%;
+}
+
+/* 第二页input格式 */
+.a1{
+  width: 100%;
+}
+.a2{
+  width: 20%;
+}
+.stature{
+  width: 80%;
+}
+
+
+
+
+
+
+

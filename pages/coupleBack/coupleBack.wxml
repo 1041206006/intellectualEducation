@@ -1,0 +1,18 @@
+<!-- 功能意见板块 -->
+<view class="navigationBar">
+  <view>
+    <image src="../img/logo.png" class="logo"></image>
+    <view class="wenzi">智育母婴社区</view>
+    <text>这个小程序是物流管理专业课题,
+      正在持续开发中.....</text>
+  </view>
+</view>
+<!-- 开发人员列表 -->
+<view wx:for="{{crews}}" wx:key="*this">
+  <image class="crew" src="../img/crew.png"></image>
+  <text class="zhiti">{{item}}</text>
+</view>
+<!-- 功能意见反馈按钮 -->
+<view class="buttonMiddle">
+<button  open-type='feedback'>意见反馈</button>
+</view>

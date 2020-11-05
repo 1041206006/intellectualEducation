@@ -1,0 +1,8 @@
+<!-- 联系客服页面 -->
+<view>
+  <view class="kefu">
+    <image src="../img/kefu3.gif"></image>
+  </view>
+<view>在线客服：</view>
+<button open-type="contact">进入客服会话</button>
+</view>

@@ -1,0 +1,54 @@
+<!-- 首页 -->
+<view  class="box">
+  <!-- 导航栏背景图片 -->
+  <image class="navigationbar"></image>
+</view>
+
+<!-- 导航栏搜索框 -->
+<view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+</view>
+
+<!-- 滚动通告栏 -->
+<van-notice-bar
+  left-icon="volume-o" 
+  mode="closeable"
+  text="{{ callboard }}"
+/>
+
+<!-- grid宫格 -->
+<view>
+  <!-- 第一排 -->
+  <van-grid column-num="3">
+    <view wx:for="{{name1}}" wx:key="*this">
+      <van-grid-item icon="{{item.icon}}" text="{{item.text}}" url="{{item.url}}" />
+    </view>
+</van-grid>
+</view>
+<!-- 文章正文 -->
+<van-tabs animated color="#86C1E9"  >
+    <van-tab wx:for="{{title}}" wx:key="*this" title="{{item.titles}}" >
+      <!-- 文章列表渲染 -->
+      <view class="list">
+      <block wx:for="{{item.array}}" wx:key="*this">
+        <view class="item" bindtap="ignition" data-array="{{item}}">
+          <!-- 图片 -->
+          <view>
+            <image src="{{item.img}}" style="width:75px;height:58px"></image>
+          </view>
+          <!-- 文字类 -->
+          <view class="desc">
+            <view class="title" >{{item.title}}</view>
+            <view class="count">
+              <view>{{item.type}}</view>
+              <!-- 下面是评论跟浏览 -->
+              <!-- <text class="liulan">{{item.liulan}}</text>
+              <text class="pinglun">{{item.pinglun}}</text> -->
+            </view>
+          </view>
+        </view>
+        <view class="hr2"></view>
+      </block>
+    </view>
+    </van-tab>
+</van-tabs>

@@ -1,0 +1,26 @@
+/* pages/texts/texts.wxss */
+.title{
+  text-align: center;
+  font-weight: bold;
+  /* 1em 等于当前的字体尺寸。如果一个元素的 font-size 为 16 像素，那么对于该元素，1em 就等于 16 像素。在设置字体大小时，em 的值会相对于父元素的字体大小改变。 */
+  /* font-size: 1em;   */
+  font-size: 50rpx;  
+}
+.author{
+  color: #b8b8b8;
+  font-size: 30rpx; 
+  text-align: right;
+}
+/* 文章页 */
+.text{
+  text-indent: 2em;
+  padding-left: 0em;
+  
+}
+/* 底部的评论点赞框 */
+.bottom{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom:0rpx;
+}

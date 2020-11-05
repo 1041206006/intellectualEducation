@@ -1,0 +1,16 @@
+{
+  "name": "zhiyv",
+  "version": "1.0.0",
+  "description": "智育母婴社区",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.5.0",
+    "miniprogram-sm-crypto": "^0.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "高坚果",
+  "license": "ISC"
+}

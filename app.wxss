@@ -1,0 +1,14 @@
+/**app.wxss**/
+/* 导入那个库 */
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+/* 下面是自己写的 */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-tab": "../../miniprogram_npm/@vant/weapp/tab/index",
+  "van-tabs": "../../miniprogram_npm/@vant/weapp/tabs/index",
+  "van-field": "../../miniprogram_npm/@vant/weapp/field/index",
+  "van-uploader": "../../miniprogram_npm/@vant/weapp/uploader/index"
+  
+  }
+}

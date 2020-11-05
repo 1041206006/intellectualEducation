@@ -1,0 +1,48 @@
+/* pages/babeKnowledge/babeKnowledge.wxss */
+/* list */
+
+.hr2 {
+  height: 2px;
+  background: #ccc;
+  opacity: 0.2;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.desc {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999;
+}
+/* 文章列表渲染下面的分割线 */
+.hr2{
+  height: 2px;
+  background: #ccc;
+  opacity: 0.2;
+}
+/* 评论跟浏览 */
+.liulan {
+    position : absolute;
+    right: 70px;
+}
+
+.pinglun {
+    position: absolute;
+    right: 10px;
+}

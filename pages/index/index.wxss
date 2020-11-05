@@ -1,0 +1,140 @@
+/* 测试
+.cszt{
+  text-align: center;
+}
+/* .cs2{
+  background-color:#169f85;
+  width: 100%;
+  height: 70rpx;
+} */
+/* .cs3{
+  background-color:#48c9b0;
+  width: 100%;
+  height: 400px;
+}
+  */
+.cs {
+    height: 10px;
+    
+}
+
+/* 导航栏 */
+
+.box {
+    width: 100%;
+    text-align: center;
+}
+
+.navigationbar {
+    background-image: url(https://imgdown.tuguaishou.com/user_download_ue/2020-09-10/图怪兽_5f24d85740c977dedb783aa4ff74c5af_89370.png);
+    width: 100%;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+
+/* 导航栏搜索框 */
+
+
+/* .orientation{ */
+
+
+/* 相对定位 */
+
+
+/* background-color: darkmagenta; */
+
+
+/* position: absolute; */
+
+
+/* top: 54%; */
+
+
+/* right : 34%; */
+
+
+/* } */
+
+
+/* .searchBox{ */
+
+
+/* padding-left: 40rpx; */
+
+
+/* vertical-align:text-top; */
+
+
+/* } */
+
+
+/* 下面是客服按钮的按键 */
+
+
+/* head */
+
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+    color: #ccc;
+}
+
+
+/* list */
+
+.hr2 {
+    height: 2px;
+    background: #ccc;
+    opacity: 0.2;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.desc {
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #999;
+}
+/* 文章列表渲染下面的分割线 */
+.hr2{
+    height: 2px;
+    background: #ccc;
+    opacity: 0.2;
+  }
+/* 评论跟浏览 */
+/* .liulan {
+    position : absolute;
+    right: 70px;
+}
+
+.pinglun {
+    position: absolute;
+    right: 10px;
+} */

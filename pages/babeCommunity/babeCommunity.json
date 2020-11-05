@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-popup": "../../miniprogram_npm/@vant/weapp/popup/index"
+  },
+  "navigationStyle" :"default",
+  "navigationBarTitleText": "育儿社区"
+}

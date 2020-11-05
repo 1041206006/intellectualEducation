@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "../../miniprogram_npm/@vant/weapp/notice-bar/index"
+  },
+  "navigationStyle" :"default",
+  "navigationBarTitleText": "胎教音乐"
+}

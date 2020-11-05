@@ -1,0 +1,6 @@
+/* pages/babeCommunity/babeCommunity.wxss */
+.lists{
+  width: 100%;
+  height: 1000rpx;
+  font-size: 80rpx;  
+}

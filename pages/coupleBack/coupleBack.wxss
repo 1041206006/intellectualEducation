@@ -1,0 +1,38 @@
+/* pages/coupleBack/coupleBack.wxss */
+/* 上面导航栏 */
+.navigationBar{
+  background-color: #86C1E9;
+  width: 100%;
+  height: 660rpx;
+  text-align: center;
+  /* 下面是设置布局居中 */
+  justify-content:center;
+  display:flex;
+  align-items: center;
+}
+/* 名字变大 */
+.wenzi{
+  font-size:large;
+  font-weight:bold;
+}
+/* logo图标大小 */
+.logo{
+  width: 200rpx;
+  height: 200rpx;
+  
+}
+/* 开发人员列表 */
+.crew{
+   width: 57rpx;
+   height: 57rpx;
+}
+.zhiti{
+  font-size: 40rpx;
+}
+/* 反馈键居中 */
+.buttonMiddle{
+  width: 100%;
+  text-align: center;
+  position:fixed; 
+  bottom:0; 
+}

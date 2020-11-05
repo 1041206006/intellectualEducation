@@ -1,0 +1,35 @@
+<!-- 胎教音乐板块 -->
+<!-- <view> -->
+  <!--  滚动栏  -->
+  <!-- <van-notice-bar mode="closeable" text="{{text}}" color="#87C2EA" background='#FFFFFF' /> -->
+<!-- <audio wx:for="{{music}}" wx:key="*this" src="{{item.src}}" name="{{item.name}}" id="{{item.id}}" poster="{{item.poster}}" author="{{item.author}}" controls loop  class="musicSet"></audio> -->
+
+<!-- </view> -->
+<view class="tab">
+  <view class="tab-item {{tab==0?'active':''}}" bindtap="changeItem" data-item="0" >播放器</view>
+  <view class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1" >播放列表</view>
+</view>
+<view class="content">
+  <swiper current="{{item}}" bindchange="changeTab">
+    <swiper-item>
+      <include src="play.wxml" />
+    </swiper-item>
+    <swiper-item>
+      <include src="playlist.wxml" />
+    </swiper-item>
+  </swiper>
+</view>
+<view class="player">
+  <image class="player-cover" src="{{play.coverImgUrl}}"></image>
+  <view class="player-info">
+    <view class="player-info-title">{{play.title}}</view>
+    <view class="player-info-singer">{{play.singer}}</view>
+  </view>
+
+  <view class="player-controls">
+    <image src="../img/01.png" bindtap="changePage" data-page="2"></image>
+    <image wx:if="{{state=='paused'}}" src="../img/02.png" bindtap="play"></image>
+    <image wx:else src="../img/02stop.png" bindtap="pause"></image>
+    <image src="../img/03.png" bindtap="next"></image>
+  </view>
+</view>
