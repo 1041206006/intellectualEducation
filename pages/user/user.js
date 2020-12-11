@@ -9,16 +9,28 @@ Page({
     lists:[{
         icon: 'https://7a69-ziyv-u4vjv-1301858199.tcb.qcloud.la/pregnancy.png',
         text: '怀孕知识',
-        url: "../../pages/babeKnowledge/babeKnowledge"
+        url: "../babeKnowledge/babeKnowledge"
     }, {
         icon: 'https://7a69-ziyv-u4vjv-1301858199.tcb.qcloud.la/childRearing.png',
         text: '育儿知识',
-        url: "../../pages/babeKnowledge/babeKnowledge"
+        url: "../babeKnowledges/babeKnowledges"
     }, {
         icon: 'https://7a69-ziyv-u4vjv-1301858199.tcb.qcloud.la/%E9%9F%B3%E4%B9%90.png',
         text: '胎教音乐',
-        url: "../../pages/babeMusic/babeMusic"
-    }]
+        url: "../babeMusic/babeMusic"
+    },{
+      icon: 'https://7a69-ziyv-u4vjv-1301858199.tcb.qcloud.la/feedback.png',
+      text: '功能意见',
+      url: "../../pages/coupleBack/coupleBack"
+  }]
+  },
+  // 列表跳转
+  uil :(e) => {
+    let urls = e.currentTarget.dataset.url;
+    console.log(urls)
+    wx.navigateTo({
+      url :urls
+    })
   },
   showModal(e) {
     this.setData({
@@ -115,5 +127,18 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  // 用户分享
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '智育社区你我的社区',
+      path: '/page/user'
+    }
+  },
+  // 
+  
 })

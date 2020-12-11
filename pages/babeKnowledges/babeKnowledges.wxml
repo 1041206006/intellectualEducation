@@ -1,0 +1,24 @@
+<!-- 这个是育儿知识跟怀孕知识的页面-->
+<!-- 文章正文 -->
+      <!-- 文章列表渲染 -->
+      <view class="list" >
+      <block wx:for="{{array}}" wx:key="*this" >
+        <view class="item"  bindtap="ignition" data-array="{{item}}">
+          <!-- 图片 -->
+          <view>
+            <image src="{{item.img}}" style="width:75px;height:58px"></image>
+          </view>
+          <!-- 文字类 -->
+          <view class="desc">
+            <view class="title">{{item.title}}</view>
+            <view class="count">
+              <view>{{item.type}}</view>
+              <!-- 下面是评论跟浏览 -->
+              <text class="liulan">{{item.liulan}}</text>
+              <text class="pinglun">{{item.pinglun}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="hr2"></view>
+      </block>
+    </view>

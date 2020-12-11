@@ -1,2 +1,10 @@
 <!--pages/babeCommunity/babeCommunity.wxml-->
-<view class="lists">该功能正在开发中.....</view>
+    <button class='bottom' type='primary'  lang="zh_CN" bindtap="con" >
+        点击登录
+    </button>
+<!-- 加载 -->
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+  <!-- <view class='cuIcon-emojifill text-orange'></view> -->
+  <image src='../img/logo.png' class='png' mode='aspectFit'></image>
+  <view class='gray-text'>正在加载请求...</view>
+</view>

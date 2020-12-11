@@ -4,74 +4,58 @@
 </view>
 <view>
   <van-tabs animated>
+    <van-tab title="大记事">
+      <view>
+        <!-- 下面是时间轴 -->
+        <view class="cu-timeline" wx:for="{{time}}" wx:key="*this">
+          <view class="cu-time">{{ item.times}}</view>
+          <view class="cu-item">
+            <view class="content">
+              <text>{{ item.minute}}</text> {{ item.texts}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+    <!-- 第二页。成长记录 -->
+
+    <van-tab title="成长记录">
+      <!-- 下面是。身高、体重、头尾 -->
+      <view>
+        <van-cell-group>
+          <van-field bind:change="onChange" value="{{ stature }}" center clearable type="idcard" label="身高"
+            placeholder="请输入孩子身高" border="{{ false }}" use-button-slot>
+            <van-button slot="button" size="small">cm</van-button>
+          </van-field>
+          <!-- 下面是 体重 -->
+          <van-field bind:change="onChange" value="{{ weight }}" center clearable type="idcard" label="体重"
+            placeholder="请输入孩子体重" border="{{ false }}" use-button-slot>
+            <van-button slot="button" size="small">kg</van-button>
+          </van-field>
+          <!-- 下面是头围 -->
+          <van-field bind:change="onChange" value="{{ head }}" center clearable type="idcard" label="头围"
+            placeholder="请输入孩子头围" border="{{ false }}" use-button-slot>
+            <van-button slot="button" size="small">cm</van-button>
+          </van-field>
+        </van-cell-group>
+        <button bindtap="save" class="submit">保存记录</button>
+        <!-- 加载 -->
+        <view class='cu-load load-modal' wx:if="{{loadModal}}">
+          <!-- <view class='cuIcon-emojifill text-orange'></view> -->
+          <image src='../img/logo.png' class='png' mode='aspectFit'></image>
+          <view class='gray-text'>正在加载请求...</view>
+        </view>
+      </view>
+    </van-tab>
     <van-tab title="云相册">
       <!-- 这个是云相册的 -->
       <view>
         <view>
-          
+
           <!-- 照片上传 -->
-          <van-uploader file-list="{{ fileList }}"  />
+          <van-uploader file-list="{{ fileList }}" />
         </view>
       </view>
-      
     </van-tab>
-    <!-- 第二页。成长记录 -->
-    <van-tab title="成长记录">
-      <!-- 下面是。身高、体重、头尾 -->
-      <view >
-        <van-cell-group>
-          <van-field
-            bind:change="onChange"
-            value="{{ stature }}"
-            center
-            clearable
-            type="idcard"
-            label="身高"
-            placeholder="请输入孩子身高"
-            border="{{ false }}"
-            use-button-slot
-          >
-            <van-button slot="button" size="small"
-              >cm</van-button
-            >
-          </van-field>
-          <!-- 下面是 体重 -->
-          <van-field
-            bind:change="onChange"    
-            value="{{ weight }}"
-            center
-            clearable
-            type="idcard"
-            label="体重"
-            placeholder="请输入孩子体重"
-            border="{{ false }}"
-            use-button-slot
-          >
-            <van-button slot="button" size="small"
-              >kg</van-button
-            >
-          </van-field>
-          <!-- 下面是头围 -->
-          <van-field
-            bind:change="onChange"
-            value="{{ sms }}"
-            center
-            clearable
-            type="idcard"
-            label="头围"
-            placeholder="请输入孩子头围"
-            border="{{ false }}"
-            use-button-slot
-          >
-            <van-button slot="button" size="small"
-              >cm</van-button
-            >
-          </van-field>
-        </van-cell-group>
-        <!-- 提交按钮 -->
-
-      </view>
-    </van-tab>
-    <van-tab title="大记事">该功能正在开发中.....</van-tab>
   </van-tabs>
 </view>

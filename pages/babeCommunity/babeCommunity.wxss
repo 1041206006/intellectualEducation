@@ -4,3 +4,9 @@
   height: 1000rpx;
   font-size: 80rpx;  
 }
+/*  */
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}

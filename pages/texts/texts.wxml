@@ -7,7 +7,7 @@
 
   <!-- 文章 -->
   
-    <view class="text">{{item.text}}</view>
+    <view class="text" style='white-space:pre-wrap'>{{item.text}}</view>
     <view class="author">浏览量：{{item.liulan}}</view>
   
 <!-- 下面的评论点赞界面 -->

@@ -13,6 +13,16 @@
 .stature{
   width: 80%;
 }
+/* 第二页提交按钮 */
+
+.submit{
+    /* height: 50px; */
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 120%;
+    position:fixed;
+    bottom: 0px;
+}
 
 
 

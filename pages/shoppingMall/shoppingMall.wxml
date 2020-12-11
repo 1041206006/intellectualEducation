@@ -1,0 +1,62 @@
+<!--pages/shoppingMall/shoppingMall.wxml-->
+
+<!-- 首页 -->
+<view>
+<!-- 搜索框 -->
+<van-search
+  value="{{ value }}"
+  shape="round"
+  background="#ffffff"
+  placeholder="新生儿纸尿裤 | 护肤套装 | 托腹裤秋装"
+/>
+<!-- 公告栏 -->
+<van-notice-bar mode="closeable" left-icon="volume-o" background="#ffffff"  text="{{ notice }}" />
+<!-- 轮播图 -->
+<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key="this">
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+<!-- 宫格 -->
+<!-- grid宫格 -->
+<view>
+  <van-grid column-num="4">
+    <view wx:for="{{name1}}" wx:key="*this" bindtap="lis" >
+      <van-grid-item icon="{{item.icon}}" text="{{item.text}}" url="{{item.url}}" />
+    </view>
+</van-grid>
+</view>
+<!-- 下面是商品的 -->
+<view  wx:for="{{shop}}" wx:key="this">
+<van-card
+  price="{{item.price}}"
+  desc="{{item.desc}}"
+  title="{{item.title}}"
+  thumb="{{ item.imageURL }}"
+>
+<view slot="footer"  >
+    <button class="buts" data-id="{{item.id}}"  bindtap="subtract">-</button>
+    <view  slot='num' class="buts" >{{item.num}}</view>
+    <button class="buts" data-id="{{item.id}}"  bindtap="add">+</button>
+  </view>
+</van-card>
+<view class="hr2"></view>
+</view>
+
+
+<!-- 下面是提交订单的界面 --> 
+<view class="base">
+<van-submit-bar
+  price="{{orderForm*100}}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+/>
+</view>
+<!-- 加载 -->
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+  <!-- <view class='cuIcon-emojifill text-orange'></view> -->
+  <image src='../img/logo.png' class='png' mode='aspectFit'></image>
+  <view class='gray-text'>请稍后...</view>
+</view>
+</view>

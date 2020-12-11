@@ -9,7 +9,9 @@
         "pages/babeDiary/babeDiary",
         "pages/babeKnowledge/babeKnowledge",
         "pages/texts/texts",
-        "pages/babeCommunity/babeCommunity"
+        "pages/babeCommunity/babeCommunity",
+        "pages/babeKnowledges/babeKnowledges",
+        "pages/shoppingMall/shoppingMall"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -30,6 +32,11 @@
             "iconPath": "pages/img/babelogo1.png",
             "selectedIconPath": "pages/img/babelogo2.png",
             "text": "宝宝日志"
+        },{
+            "pagePath": "pages/shoppingMall/shoppingMall",
+            "iconPath": "pages/img/babelogo1.png",
+            "selectedIconPath": "pages/img/babelogo2.png",
+            "text": "智育商城"
         }, {
             "pagePath": "pages/user/user",
             "iconPath": "pages/img/babelogo1.png",

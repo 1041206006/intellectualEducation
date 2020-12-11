@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-search": "../../miniprogram_npm/@vant/weapp/search/index",
+    "van-notice-bar": "../../miniprogram_npm/@vant/weapp/notice-bar/index",
+    "van-grid": "../../miniprogram_npm/@vant/weapp/grid/index",
+    "van-grid-item": "../../miniprogram_npm/@vant/weapp/grid-item/index",
+    "van-row": "../../miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "../../miniprogram_npm/@vant/weapp/col/index",
+    "van-submit-bar": "../../miniprogram_npm/@vant/weapp/submit-bar/index",
+    "van-card": "../../miniprogram_npm/@vant/weapp/card/index"
+  },
+  "navigationStyle": "default",
+    "navigationBarTitleText": "智育商城"
+}

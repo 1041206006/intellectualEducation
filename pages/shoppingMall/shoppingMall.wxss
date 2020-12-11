@@ -1,0 +1,28 @@
+/* pages/shoppingMall/shoppingMall.wxss */
+/* 列表 */
+
+/* 商品列表按钮 */
+.buts{
+  font-size: 100%;
+  width: 50rpx;
+  height: 36rpx;
+  /* 文字靠右 */
+   float:right;
+  /* 文字居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 右下角框定位 */
+  position: relative;
+  bottom: 15px;
+}
+/* h2 */
+.hr2 {
+  height: 2px;
+  background: #ccc;
+  opacity: 0.2;
+}
+/* 解决底部的问题 */
+.base{
+  height: 93rpx;
+}

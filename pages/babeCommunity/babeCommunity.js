@@ -7,7 +7,45 @@ Page({
   data: {
     
   },
-  
+
+  // 加载逻辑
+  grid: function () {
+    setTimeout(() => {
+      wx.showModal({
+        title: '请求失败',
+        content: '请联系管理员',
+        success(res) {
+          if (res.confirm) {
+            wx.navigateBack({
+              delta: 1
+            })
+          } else if (res.cancel) {
+            wx.navigateBack({
+              delta: 1
+            })
+          }
+        }
+      })
+    }, 4000);
+    
+  },
+  // 加载逻辑
+  li: function () {
+
+    // 下面是定时器
+    this.setData({
+      loadModal: true
+    })
+    setTimeout(() => {
+      this.setData({
+        loadModal: false
+      })
+    }, 4000);
+  },
+    // 遮盖层
+    con: function (){
+    this.li(this.grid())
+    },
 
   /**
    * 生命周期函数--监听页面加载
